@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #0d121c;
+    color: #1a1d24;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  ::selection {
+    background-color: rgba(225, 43, 56, 0.2);
+    color: #0e121d;
+  }
+
+  h1, h2, h3, .font-serif, .font-display {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+}
+
+/* Sophisticated warm off-white cream background matching IVPdemo2.png */
+.bg-subtle-linen {
+  background-color: #F5F1E8;
+  background-image: radial-gradient(rgba(170, 160, 145, 0.12) 0.5px, transparent 0.5px);
+  background-size: 28px 28px;
+}
+
+/* Glassmorphism / subtle card shadows */
+.shadow-editorial {
+  box-shadow: 0 10px 30px -5px rgba(14, 18, 29, 0.06), 0 20px 40px -10px rgba(14, 18, 29, 0.04);
+}
+
+/* Custom minimal scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #090c13;
+}
+::-webkit-scrollbar-thumb {
+  background: #232c44;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #344161;
+}
+
